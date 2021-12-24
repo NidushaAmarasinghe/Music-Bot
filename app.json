@@ -1,0 +1,43 @@
+{
+    "name": "Nidusha Song Downloader Bot",
+    "description": "A bot that can download song you want.",
+    "logo": "https://telegra.ph/file/a8f923c089cfce91ea1d3.jpg",
+    "keywords": [
+        "Music",
+        "Song",
+        "Telegram Bot",
+        "Nidusha_Bots"
+    ],
+    "website": "https://github.com/NidushaAmarasinghe",
+    "repository": "https://github.com/NidushaAmarasinghe/Music-Bot",
+    "success_url": "https://t.me/Nidusha_Bots",
+    "env": {
+        "TG_BOT_TOKEN": {
+            "description": "You Telegram Bot Token from @BotFather",
+            "value": ""
+        },
+        "API_HASH": {
+            "description": "Your API Hash from my.telegram.org",
+            "value": ""
+        },
+        "APP_ID": {
+            "description": "Your APP ID from my.telegram.org",
+            "value": ""
+        }
+    },
+    "addons": [],
+    "buildpacks": [
+        {
+            "url": "heroku/python"
+        },
+        {
+            "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest"
+        }
+    ],
+    "formation": {
+        "worker": {
+            "quantity": 1,
+            "size": "free"
+        }
+    }
+}
